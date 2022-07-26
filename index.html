@@ -12,138 +12,165 @@
 </head>
 
 <body>
-    <header>
-        <!-- navber starts -->
+    <header class="container">
 
-        <nav class="navbar navbar-expand-lg p-3">
+        <!-- navber starts -->
+        <nav class="navbar navbar-expand-lg bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="" class="d-inline-block align-text-top">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Shoes</a>
+                            <a class="nav-link" href="#">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Backpack</a>
+                            <a class="nav-link">Backpack</a>
                         </li>
-                        <li class="nav-item">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-dark" type="submit">Search</button>
-                            </form>
+                        <li>
+                            <div class="nav-link">Subscribe</div>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-dark">Subscribe</button>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
+        <!-- navber ends -->
 
         <!-- carousel starts -->
+        <section class="mt-4">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active rounded">
+                        <div class="row p-5">
+                            <div class="col-lg-7 d-flex flex-column justify-content-center">
+                                <h2>MI 50" 4K LCD HDR10+ TV</h2>
+                                <br>
+                                <p>Xiaomi Mi P1 L50M6-6AEU Smart Android TV comes with a 50" 4K UHD
+                                    display and epic views with a borderless design. 4K UHD resolution delivers
+                                    true-to-life images with more detail and greater depth.</p>
+                                <h1 class="text-warning">$800</h1>
+                                <div>
+                                    <div class="btn btn-warning">Buy Now</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item active rounded">
+                        <div class="row p-5">
+                            <div class="col-lg-7 d-flex flex-column justify-content-center">
+                                <h2>JBL ANC Headphone</h2>
+                                <br>
+                                <p>JBL features headphones and earbuds high-performance sound, built-in microphones and
+                                    noise cancelling comfort and designs. Shop today!</p>
+                                <h1 class="text-warning">$400</h1>
+                                <br>
+                                <div>
+                                    <div class="btn btn-warning">Buy Now</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item active rounded">
+                        <div class="row p-5">
+                            <div class="col-lg-7 d-flex flex-column justify-content-center">
+                                <h2>Microsoft X-Box</h2>
+                                <br>
+                                <p>Released in 2020, Xbox Series X and Xbox Series S will change the way you think about
+                                    video game consoles. Boasting a hefty 12 teraflops, Xbox Series X has twice the
+                                    graphics
+                                    processing unit (GPU) performance ability of the preceding Xbox One X system.</p>
+                                <h1 class="text-warning">$550</h1>
+                                <br>
+                                <div>
+                                    <div class="btn btn-warning">Buy Now</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
             </div>
-            <div class="carousel-inner p-4">
-                <div class="carousel-item active rounded">
-                    <div class="row p-5">
-                        <div class=" col-lg-7 d-flex flex-column justify-content-center align-items-center">
-                            <h2>MI 50" 4K LCD HDR10+ TV</h2>
-                            <br>
-                            <p>Xiaomi Mi P1 L50M6-6AEU Smart Android TV comes with a 50" 4K UHD (3,840 x 2,160)
-                                display and epic views with a borderless design. 4K UHD resolution delivers
-                                true-to-life images with more detail and greater depth. It has a viewing angle of
-                                178Â°(H)/178Â°(V).</p>
-                            <h1>$600</h1>
-                            <div class="btn btn-warning">Buy Now</div>
-                        </div>
-                        <div class="col-lg-5">
-                            <img src="images/banner-images/tv.png" class="d-block w-75" alt="...">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row p-5">
-                        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-center">
-                            <h2>JBL ANC Headphone</h2>
-                            <br>
-                            <p>JBL features headphones and earbuds high-performance sound, built-in microphones and
-                                noise cancelling comfort and designs. Shop today!</p>
-                            <h1>$400</h1>
-                            <br>
-                            <div class="btn btn-warning">Buy Now</div>
-                        </div>
-                        <div class="col-lg-5">
-                            <img src="images/banner-images/headphone.png" class="d-block w-75" alt="...">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row p-5">
-                        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-center">
-                            <h2>Microsoft X-Box</h2>
-                            <br>
-                            <p>Released in 2020, Xbox Series X and Xbox Series S will change the way you think about
-                                video game consoles. Boasting a hefty 12 teraflops, Xbox Series X has twice the graphics
-                                processing unit (GPU) performance ability of the preceding Xbox One X system.</p>
-                            <h1>$550</h1>
-                            <br>
-                            <div class="btn btn-warning">Buy Now</div>
-                        </div>
-                        <div class="col-lg-5">
-                            <img src="images/banner-images/xbox.png" class="d-block w-75" alt="...">
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+        </section>
+        <!-- carousel ends -->
+
     </header>
 
-    <main>
-        <!-- catagory starts -->
+    <main class="container">
 
-        <div class="container text-white mb-4">
-            <div class="row">
-                <div class="col bg-warning rounded m-3 p-3 d-flex flex-row justify-content-between align-items-center">
-                    <h1>Watch</h1>
-                    <img src="images/categories/watch.png" class="w-25" alt="">
+        <!-- catagory starts -->
+        <section class="container text-white my-5">
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="bg-warning rounded d-flex flex-row justify-content-between align-items-center p-2">
+                        <h1>Watch</h1>
+                        <img src="images/categories/watch.png" class="w-25" alt="">
+                    </div>
                 </div>
-                <div class="col bg-success rounded m-3 p-3  d-flex flex-row justify-content-between align-items-center">
-                    <h1>Bag</h1>
-                    <img src="images/categories/bag.png" class="w-25" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="bg-success rounded d-flex flex-row justify-content-between align-items-center p-2">
+                        <h1>Bag</h1>
+                        <img src="images/categories/bag.png" class="w-25" alt="">
+                    </div>
                 </div>
-                <div class="col bg-primary rounded m-3 p-3 d-flex flex-row justify-content-between align-items-center">
-                    <h1>Shoes</h1>
-                    <img src="images/categories/shoes.png" class="w-25" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="bg-primary rounded d-flex flex-row justify-content-between align-items-center p-2">
+                        <h1>Shoes</h1>
+                        <img src="images/categories/shoes.png" class="w-25" alt="">
+                    </div>
                 </div>
+
             </div>
-        </div>
+        </section>
+        <!-- catagory ends -->
 
         <!-- products starts -->
 
-        <div class="container mb-4">
+        <div class="container mt-4">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-3 mb-5">
                 <div class="col">
@@ -156,7 +183,6 @@
                         </div>
                         <div>
                             <div class="btn btn-warning m-3">Buy Now</div>
-
                         </div>
                     </div>
                 </div>
@@ -253,6 +279,7 @@
                 <button class="btn btn-warning">SUBMIT</button>
             </div>
         </form>
+        <div class="text-center mt-5"> ©2025. Panda Commerce. All rights reserved. Sofia, Bulgaria.</div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
